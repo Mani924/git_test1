@@ -1,1 +1,1 @@
-iiiiii
+In the Access Control Standard document, specifically in the Password Management section (2.1.3), there is a requirement stated regarding the Minimum Password Age. According to this requirement, an end user is not allowed to change their password more than once per day. However, a potential issue arises if a user forgets their most recent password change. In such cases,
