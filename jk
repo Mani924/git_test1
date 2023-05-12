@@ -1,1 +1,20 @@
 In the Access Control Standard document, specifically in the Password Management section (2.1.3), there is a requirement stated regarding the Minimum Password Age. According to this requirement, an end user is not allowed to change their password more than once per day. However, a potential issue arises if a user forgets their most recent password change. In such cases,
+
+
+In the context of the security TSB (Technical Security Baseline), when "N/A" is mentioned in the "Site Facing" column of the non-PCI requirements table, it typically means that the specific requirement does not apply to the site-facing components or systems being evaluated.
+
+In this case, it suggests that the mentioned requirement or vulnerability is not applicable or relevant to the components that directly interact with external users or the public-facing aspects of the system. However, it's essential to review the context and any accompanying documentation to ensure a clear understanding of the specific implications and any alternative measures that may be in place to address other vulnerabilities.
+
+
+Additionally, it is important to note that in the case of Wiz service accounts, it may not be as straightforward to determine when someone is leaving the organization compared to regular user accounts. However, it is still possible to implement measures to address this.
+
+One approach is to establish a process where the responsible teams or Business Units (BUs) inform the IT or security teams about employee departures or role changes. This enables the IT or security teams to proactively identify and disable or revoke access to the corresponding Wiz service accounts associated with those individuals. Implementing a procedure to disable or deactivate service accounts promptly upon an employee's departure helps ensure that their access is revoked in a timely manner, reducing the risk of unauthorized use.
+
+By combining password rotation policies, regular review of the service account table, and proactive disabling of service accounts, organizations can enhance the overall security of Wiz service accounts and mitigate potential risks associated with personnel changes.
+
+
+In the case of Wiz service accounts, it is indeed possible to maintain an Excel or SNOW table to keep track of the service accounts. This table can include relevant information such as the account name, associated roles, and the individuals responsible for managing them. 
+
+Implementing a password rotation policy for Wiz service accounts is a good practice for enhancing security. By periodically changing the passwords, you can minimize the risk of unauthorized access. Additionally, sending notifications to the users, based on the table, can serve as a reminder to update their credentials and maintain compliance with the password rotation policy.
+
+Using a centralized system like SNOW (ServiceNow) can provide added benefits, as it allows for streamlined management and automation of password rotation processes. This ensures consistency, reduces human error, and facilitates effective tracking and reporting.
